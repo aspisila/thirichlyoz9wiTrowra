@@ -11,11 +11,6 @@ Ext.define('FS2_01.view.main.Main', {
 
     requires: [
         'Ext.plugin.Viewport',
-        'Ext.window.MessageBox',
-
-        'FS2_01.view.main.MainController',
-        'FS2_01.view.main.MainModel',
-        'FS2_01.view.main.List'
     ],
 
     controller: 'main',
@@ -76,29 +71,18 @@ Ext.define('FS2_01.view.main.Main', {
     },
 
     items: [{
-        title: 'Homie',
+        title: 'Home',
         iconCls: 'fa-home',
         // The following grid shares a store with the classic version's grid as well!
         items: [{
-            xtype: 'mainlist'
+            xtype: 'toolbar',
+            dock: 'top',
+            items: [
+                {
+                    text: 'Users',
+                    iconCls: 'x-fa fa-user'
+                }
+            ]
         }]
-    }, {
-        title: 'Users',
-        iconCls: 'fa-user',
-        bind: {
-            html: '{loremIpsum}'
-        }
-    }, {
-        title: 'Groups',
-        iconCls: 'fa-users',
-        bind: {
-            html: '{loremIpsum}'
-        }
-    }, {
-        title: 'Settings',
-        iconCls: 'fa-cog',
-        bind: {
-            html: '{loremIpsum}'
-        }
     }]
 });
