@@ -28,7 +28,12 @@ Ext.define('FS2_01.view.main.Main', {
                 {text: 'Copy'},
                 {text: 'Paste'}
             ]
-        }]
+        },
+            {
+                text: 'Grid Window', // TODO: Andre, please make the window open when the user clicks this item
+
+            }
+        ]
     }]
 
 });
