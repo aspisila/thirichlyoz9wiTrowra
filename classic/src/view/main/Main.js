@@ -6,76 +6,29 @@
  * TODO - Replace this content of this view to suite the needs of your application.
  */
 Ext.define('FS2_01.view.main.Main', {
-    extend: 'Ext.tab.Panel',
+    extend: 'Ext.container.Viewport',
     xtype: 'app-main',
-
-    requires: [
-        'Ext.plugin.Viewport',
-    ],
 
     controller: 'main',
 
-    ui: 'navigation',
-
-    tabBarHeaderPosition: 1,
-    titleRotation: 0,
-    tabRotation: 0,
-
-    header: {
-        layout: {
-            align: 'stretchmax'
-        },
-        iconCls: 'fa-th-list'
-    },
-
-    tabBar: {
-        flex: 1,
-        layout: {
-            align: 'stretch',
-            overflowHandler: 'none'
-        }
-    },
-
-    responsiveConfig: {
-        tall: {
-            headerPosition: 'top'
-        },
-        wide: {
-            headerPosition: 'left'
-        }
-    },
-
-    defaults: {
-        bodyPadding: 20,
-        tabConfig: {
-            plugins: 'responsive',
-            responsiveConfig: {
-                wide: {
-                    iconAlign: 'left',
-                    textAlign: 'left'
-                },
-                tall: {
-                    iconAlign: 'top',
-                    textAlign: 'center',
-                    width: 120
-                }
-            }
-        }
-    },
-
     items: [{
-        title: 'Home',
-        iconCls: 'fa-home',
-        // The following grid shares a store with the classic version's grid as well!
+        xtype: 'menubar',
+        dock: 'bottom',
         items: [{
-            xtype: 'toolbar',
-            dock: 'top',
-            items: [
-                {
-                    text: 'Users',
-                    iconCls: 'x-fa fa-user'
-                }
+            text: 'File',
+            menu: [
+                {text: 'Open...'},
+                '-',
+                {text: 'Close'}
+            ]
+        }, {
+            text: 'Edit',
+            menu: [
+                {text: 'Cut'},
+                {text: 'Copy'},
+                {text: 'Paste'}
             ]
         }]
     }]
+
 });
