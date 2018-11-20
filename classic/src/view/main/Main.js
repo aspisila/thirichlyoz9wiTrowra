@@ -14,7 +14,6 @@ Ext.define('FS2_01.view.main.Main', {
     ],
 
     controller: 'main',
-    viewModel: 'main',
 
     ui: 'navigation',
 
@@ -25,12 +24,6 @@ Ext.define('FS2_01.view.main.Main', {
     header: {
         layout: {
             align: 'stretchmax'
-        },
-        title: {
-            bind: {
-                text: '{name}'
-            },
-            flex: 0
         },
         iconCls: 'fa-th-list'
     },
