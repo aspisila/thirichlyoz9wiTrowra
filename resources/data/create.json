@@ -1,0 +1,10 @@
+{
+    "data": [{
+        "name": "New user",
+        "address": "Street 01",
+        "city": "New York",
+        "state": "NY",
+        "zipCode": "10005"
+    }],
+    "success": true
+}

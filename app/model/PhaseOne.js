@@ -9,10 +9,14 @@ Ext.define('FS2_01.model.PhaseOne', {
     ],
     proxy: {
         type: 'ajax',
-        url: '/resources/data/users.json',
         reader: {
             type: 'json',
             rootProperty: 'data'
+        },
+        api: {
+            read: '/resources/data/users.json',
+            create: '/resources/data/create.json',
+            update: '/resources/data/update.json'
         }
     }
 });
