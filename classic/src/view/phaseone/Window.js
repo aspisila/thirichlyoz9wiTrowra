@@ -23,6 +23,7 @@ Ext.define('FS2_01.view.phaseone.Window', {
     },{
         xtype: 'window',
         reference: 'phaseOndeForm',
+        closeAction: 'hide',
         hidden: true,
         modal: true,
         width: 400,
