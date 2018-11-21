@@ -4,7 +4,14 @@
  */
 Ext.define('FS2_01.view.main.MainController', {
     extend: 'Ext.app.ViewController',
+    alias: 'controller.main',
 
-    alias: 'controller.main'
+    onMenuClick: function(menu, item) {
+        var win = this.getView().add({
+            xtype: item.to
+        });
+
+        win.show();
+    },
 
 });

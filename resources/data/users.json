@@ -1,0 +1,18 @@
+{
+    "data": [{
+        "id": 1,
+        "name": "André Spisila",
+        "address": "Street 01",
+        "city": "New York",
+        "state": "NY",
+        "zipCode": "10005"
+    },{
+        "id": 2,
+        "name": "Rodrigo Spisila",
+        "address": "Street 12",
+        "city": "New York",
+        "state": "NY",
+        "zipCode": "10015"
+    }],
+    "total": 2
+}

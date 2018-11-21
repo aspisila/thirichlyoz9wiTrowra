@@ -30,10 +30,13 @@ Ext.define('FS2_01.view.main.Main', {
             ]
         },
             {
-                text: 'Grid Window', // TODO: Andre, please make the window open when the user clicks this item
-
+                text: 'Grid Window',
+                to: 'phaseone' // flag used by Maincontroller = xtype of window
             }
-        ]
+        ],
+        listeners: {
+            click: 'onMenuClick' // = Method in the MainController
+        }
     }]
 
 });
